@@ -114,7 +114,7 @@ def plot_logistic():
         ax.yaxis.set_ticklabels([])
 
     plt.tight_layout()
-    plt.savefig("plot_logistic.png", dpi=300)
+    plt.savefig("img/plot_logistic.png", dpi=300)
     plt.close("all")
 
 
@@ -226,7 +226,7 @@ def plot_bayes():
 
     #  plt.tight_layout()
     fig.set_size_inches(10, 2.5)
-    plt.savefig("plot_bayes.png", dpi=300)
+    plt.savefig("img/plot_bayes.png", dpi=300)
     plt.close("all")
 
 
@@ -292,15 +292,15 @@ def plot_regression():
         ax.yaxis.set_ticklabels([])
 
     plt.tight_layout()
-    plt.savefig("plot_regression.png", dpi=300)
+    plt.savefig("img/plot_regression.png", dpi=300)
     plt.close("all")
 
 def main():
     """仅用于单元测试"""
     # 逻辑回归
-    # plot_logistic()
+    plot_logistic()
     # 贝叶斯？
-    # plot_bayes()
+    plot_bayes()
     # 线性回归
     plot_regression()
 
